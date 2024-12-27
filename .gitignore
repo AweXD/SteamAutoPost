@@ -25,4 +25,9 @@ replay_pid*
 
 # Sensitive Info
 config.properties
+
+# Properties
+/build/built-jar.properties
+
+# Directories
 /dist/
