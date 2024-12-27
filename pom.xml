@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <!-- Project coordinates -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.steamautopost</groupId> 
+    <artifactId>SteamAutoPost</artifactId> 
+    <version>1.0-SNAPSHOT</version> <!-- You can update this as needed -->
+
+    <!-- Project information -->
+    <name>Steam Auto Post</name>
+    <url>https://github.com/AweXD/SteamAutoPost> 
+
+    <!-- Repositories where dependencies are downloaded from -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <!-- Dependencies -->
+    <dependencies>
+        <!-- Example of a dependency -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version> <!-- Replace with the version you need -->
+        </dependency>
+
+ 	<!-- Selenium WebDriver -->
+    	<dependency>
+        	<groupId>org.seleniumhq.selenium</groupId>
+        	<artifactId>selenium-java</artifactId>
+        	<version>4.27.0</version>
+    	</dependency>
+
+	<!-- SQLite JDBC driver -->
+    	<dependency>
+        	<groupId>org.xerial</groupId>
+        	<artifactId>sqlite-jdbc</artifactId>
+        	<version>3.47.1.0</version>
+    	</dependency>
+
+	<!-- MongoDB Java Driver -->
+    	<dependency>
+        	<groupId>org.mongodb</groupId>
+        	<artifactId>mongodb-driver</artifactId>
+        	<version>3.12.14</version>
+    	</dependency>
+
+
+    </dependencies>
+
+    <!-- Build settings -->
+    <build>
+        <plugins>
+            <!-- Compiler plugin to ensure correct Java version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source> <!-- Replace with your Java version -->
+                    <target>1.8</target> <!-- Replace with your Java version -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

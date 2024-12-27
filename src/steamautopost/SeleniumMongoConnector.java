@@ -169,7 +169,6 @@ public class SeleniumMongoConnector {
         // Initialize WebDriver with specified options
         WebDriver tDriver = new FirefoxDriver(tOptions);
         
-        String seleniumVersion = System.getProperty("selenium.version");
         
         // Register the shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
